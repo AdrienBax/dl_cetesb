@@ -5,8 +5,11 @@ CETESB qualar website is avalaible with credentials at [CETESB qualar website](h
 
 
 This code has been inspired by:
+
 https://www.curso-r.com/blog/2018-03-19-scraper-cetesb/
+
 https://github.com/quishqa/qualR/blob/master/R/CetesbRetrieve.R
+
 https://github.com/williamorim/Rpollution-blog
 
 ## library
@@ -23,8 +26,10 @@ You need to fill these parameters
 'code_variable = ' example: code_variable = '63' for Ozone
 
 ## measurements and stations
-Two tables are provided two know by William Morin to find the station and variable (CETESB) codes
+Two tables are provided two know by William Morin to find the station and variable (CETESB) codes:
+
 https://github.com/williamorim/Rpollution-blog/blob/master/content/blog/data/param_ids.csv
+
 https://github.com/williamorim/Rpollution-blog/blob/master/content/blog/data/station_ids.csv
 
 ## output
