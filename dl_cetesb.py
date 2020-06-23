@@ -14,8 +14,15 @@ code_variable = '' # example: code_variable = '63' for Ozone
 url = 'https://qualar.cetesb.sp.gov.br/qualar/autenticador'
 url2 = 'https://qualar.cetesb.sp.gov.br/qualar/exportaDados.do?method=pesquisar'
 
-rlog = {'cetesb_login':myLOGIN,'cetesb_password':myPASSWORD}
-rdata = {'irede':'A','dataInicialStr':date_start,'dataFinalStr':date_end,'iTipoDado':'P','estacaoVO.nestcaMonto':code_station,'parametroVO.nparmt':code_variable} 
+rlog = {'cetesb_login':myLOGIN,\
+        'cetesb_password':myPASSWORD}
+
+rdata = {'irede':'A',\
+         'dataInicialStr':date_start,\
+         'dataFinalStr':date_end,\
+         'iTipoDado':'P',\
+         'estacaoVO.nestcaMonto':code_station,\
+         'parametroVO.nparmt':code_variable} 
 
 s = requests.session()
 r = s.request('POST',url,data=rlog)
