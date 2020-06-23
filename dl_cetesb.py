@@ -1,8 +1,5 @@
-import requests
-from bs4 import BeautifulSoup
-import numpy as np
 #############################################################################
-# parameters
+# BEGIN parameters
 #############################################################################
 myLOGIN = '' # put your login for CETESB  example: myLOGIN = 'john@doe.com'
 myPASSWORD = '' # put your password for CETESB
@@ -11,6 +8,12 @@ date_end = '' # example: date_start = '01/01/2016'
 code_station = '' # example: code_station = '95' for Cid.Universitária-USP-Ipen
 code_variable = '' # example: code_variable = '63' for Ozone
 #############################################################################
+# END parameters
+#############################################################################
+import requests
+from bs4 import BeautifulSoup
+import numpy as np
+
 url = 'https://qualar.cetesb.sp.gov.br/qualar/autenticador'
 url2 = 'https://qualar.cetesb.sp.gov.br/qualar/exportaDados.do?method=pesquisar'
 
